@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    min-height: 100vh;
+    background-color: #06283D
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
+
+}
+
+.wrapper {
+    border: 3px solid #ccc;
+    border-radius: 5px;
+}
+
+.text-input {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    ;
+}
+
+.from-text {
+    border-radius: 0;
+    border-right: 2px solid #ccc;
+    ;
+}
+
+
+textarea {
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+textarea::placeholder {
+    color: #b7b6b6;
+}
+
+.controls,
+li,
+.icons,
+.icons i {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls {
+    list-style: none;
+    padding: 12px 15px;
+}
+
+.controls .row .icons {
+    width: 38%;
+}
+
+.controls .row .icons i {
+    width: 50px;
+    color: #adadad;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    justify-content: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #06283d;
+    outline: 0;
+    border: 1px solid #06283d;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.row.to .icons {
+    padding-right: 15px;
+    border-right: 2px solid #ccc;
+}
+
+.row.from .icons {
+    padding-left: 15px;
+    border-left: 2px solid #ccc;
+}
+
+.row select {
+    color: #333;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    background-color: none;
+    padding-left: 5px;
+}
+
+
+.text-input textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+.controls .row select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.text-input textarea::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.text-input textarea::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 8px;
+}
+
+.controls .row select::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+.exchange {
+    color: #adadad;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+i:active {
+    transform: scale(0.9);
+}
+
+@media (max-width:600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .wrapper .text-input {
+        flex-direction: column;
+    }
+
+    .text-input .from-text {
+        border-right: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    button {
+        padding: 13px;
+        font-size: 16px;
+    }
+
+    select {
+        font-size: 16px;
+    }
+
+    .exchange {
+        font-size: 14px;
+    }
+}
